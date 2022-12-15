@@ -2,20 +2,27 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Your Very Handsome Website</title>
-    <meta name="description" content="" />
+    <title>Luxspace - E Commerce</title>
+    <meta name="description" content="furniture" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="Luxspace - E Commerce" />
+    <meta property="og:description" content="furniture" />
+    <meta property="og:url" content="https://luxspace.com" />
+    <meta
+      property="og:image"
+      content="https://luxspace.com/images/content/preview-homepage.jpg"
+    />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <link rel="apple-touch-icon" href="images/content/favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/fbb538ba8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/app.minify.css" />
     <link rel="icon" href="images/content/favicon.png" />
 
     <meta name="theme-color" content="#000" />
@@ -24,8 +31,148 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+    <!-- START: Header -->
+    <header class="absolute w-full z-50 px-4">
+      <div class="container max-w-7xl mx-auto py-10">
+        <div class="flex flex-stretch items-center">
+          <div class="w-56 flex items-center">
+            <img src="images/content/logo.png" alt="" />
+          </div>
 
+          <div class="w-full"></div>
+
+          <!-- START: menu hamburger wrapper -->
+          <div class="w-auto">
+            <ul
+              class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+            >
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-black hover:underline"
+                  >Showcase</a
+                >
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-black hover:underline"
+                  >Catalog</a
+                >
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-black hover:underline"
+                  >Delivery</a
+                >
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-black hover:underline"
+                  >Rewards</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- END: menu hamburger wrapper -->
+
+          <div class="w-auto">
+            <ul class="flex items-center">
+              <li class="ml-6 block md:hidden">
+                <button
+                  id="menu-toggler"
+                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black md:text-white focus:outline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 fill-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li class="ml-6">
+                <a
+                  href=""
+                  class="flex items-center justify-center w-8 h-8 text-black md:text-black"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END: Header -->
+
+    <!-- START: Section Hero -->
+    <section class="flex items-center hero">
+      <!-- START: Section Hero | Left Sides-->
+      <div
+        class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
+      >
+        <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+          The Room <br class="" />You've Dreaming
+        </h1>
+        <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+          Kami menyediakan furniture berkelas yang
+          <br class="hidden md:block" />membuat ruangan terasa nyaman
+        </h2>
+        <div>
+          <a
+            href="#browse-the-room"
+            class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
+          >
+            Explore Now
+          </a>
+        </div>
+      </div>
+      <!-- END: Section Hero | Left Sides-->
+
+      <div class="w-full inset-0 md:relative md:w-1/2">
+        <div class="relative hero-image">
+          <div class="overlay inset-0 bg-black-opacity-30 z-10"></div>
+          <div class="overlay right-0 bottom-0 md:inset-0">
+            <button
+              class="video hero-cta focus:outline-none z-30 modal-trigger"
+              data-content='<div class="w-screen-pb-56 md:w-88 relative z-50">
+                <div class="absolute w-full h-full">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/pgffXMrVaAw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>'
+            ></button>
+          </div>
+          <img src="images/content/spacejoy.jpg" alt="error img" />
+        </div>
+      </div>
+    </section>
+    <!-- END: Section Hero -->
+
+    <!-- <p>header</p> -->
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () {
